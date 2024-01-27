@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B630EB57-02BA-47C5-AF03-764789EECC1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StokYönetimSistemi</RootNamespace>
+    <AssemblyName>StokYönetimSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeçmişForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeçmişForm.Designer.cs">
+      <DependentUpon>GeçmişForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirişForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirişForm.Designer.cs">
+      <DependentUpon>GirişForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriForm.Designer.cs">
+      <DependentUpon>KategoriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıForm.Designer.cs">
+      <DependentUpon>KullanıcıForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüşteriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüşteriForm.Designer.cs">
+      <DependentUpon>MüşteriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporForm.Designer.cs">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparişForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparişForm.Designer.cs">
+      <DependentUpon>SiparişForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparişModulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparişModulForm.Designer.cs">
+      <DependentUpon>SiparişModulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokForm.Designer.cs">
+      <DependentUpon>StokForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SYSdbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SYSdbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeçmişForm.resx">
+      <DependentUpon>GeçmişForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirişForm.resx">
+      <DependentUpon>GirişForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriForm.resx">
+      <DependentUpon>KategoriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıForm.resx">
+      <DependentUpon>KullanıcıForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüşteriForm.resx">
+      <DependentUpon>MüşteriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RaporForm.resx">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparişForm.resx">
+      <DependentUpon>SiparişForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparişModulForm.resx">
+      <DependentUpon>SiparişModulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokForm.resx">
+      <DependentUpon>StokForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SYSdbDataSet.xsc">
+      <DependentUpon>SYSdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet.xss">
+      <DependentUpon>SYSdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet1.xsc">
+      <DependentUpon>SYSdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet1.xss">
+      <DependentUpon>SYSdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet2.xsc">
+      <DependentUpon>SYSdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet2.xss">
+      <DependentUpon>SYSdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet3.xsc">
+      <DependentUpon>SYSdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet3.xss">
+      <DependentUpon>SYSdbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet4.xsc">
+      <DependentUpon>SYSdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet4.xss">
+      <DependentUpon>SYSdbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet5.xsc">
+      <DependentUpon>SYSdbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet5.xss">
+      <DependentUpon>SYSdbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet6.xsc">
+      <DependentUpon>SYSdbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet6.xss">
+      <DependentUpon>SYSdbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet7.xsc">
+      <DependentUpon>SYSdbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet7.xss">
+      <DependentUpon>SYSdbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet8.xsc">
+      <DependentUpon>SYSdbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SYSdbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SYSdbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SYSdbDataSet8.xss">
+      <DependentUpon>SYSdbDataSet8.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
